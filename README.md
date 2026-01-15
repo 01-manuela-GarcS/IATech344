@@ -74,10 +74,17 @@ set-ExecutionPolicy Unrestricted   y luego S
 Permite ejecutar scripts en el equipo (cuando al momento de activar el entorno no nos lo permite)
 
 Para "actualizar" la carpeta de Profesores que es la que hemos clonado, lo mejor es hacelo por separado, es decir, en lugar de que lo hagos en la carpeta donde se encuentran las dos, seleccionar solo a una en este caso a Profesores y en la parte de abajo (inferior izquierda, le damos clic a el ciruclo con las flechas (sincronizar))
-
-
-Para volver a activar el entorno, debemos, perimero nos ubicamos en la carpeta donde esta el entorno virtual cd .\Personal\mision1\proyecto1\ y luego lo activamos env3_13_3\scripts\activate
 ```
+
+### Activar entrono virtual
+```
+Para volver a ACTIVAR el Entorno Virtual, debemos, perimero nos ubicamos en la carpeta donde esta el entorno virtual cd .\Personal\mision1\proyecto1\ y luego lo activamos env3_13_3\scripts\activate
+```
+### Desactivar entorno virtual
+```
+Para DESACTIVAR el Entorno Virtual, debemos, en la temrinar escribir el comando de deactivate
+```
+
 
 ### Python (Entrenamiento)
 ```
@@ -92,4 +99,9 @@ pip list
 Para conocer la versión de la libreria pip
 python entrenamiento.py  (el cual es el nombre de la pagina python que estamos trabajando)
 Y luego cargamos la libreria en el archivo de python que vamos a utilizar
+```
+
+###
+```
+
 ```
