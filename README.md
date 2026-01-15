@@ -55,7 +55,7 @@ push es el encargado de subir la información al git
 ```
 
 
-### Entornos virtuales
+### Entornos virtuales y Automatización
 ```
 pip list
 Lista de librerias
@@ -72,9 +72,24 @@ Para activar el entorno y todas las librerias que instale se guardaran en este e
 PowerShell como administrador
 set-ExecutionPolicy Unrestricted   y luego S
 Permite ejecutar scripts en el equipo (cuando al momento de activar el entorno no nos lo permite)
+
+Para "actualizar" la carpeta de Profesores que es la que hemos clonado, lo mejor es hacelo por separado, es decir, en lugar de que lo hagos en la carpeta donde se encuentran las dos, seleccionar solo a una en este caso a Profesores y en la parte de abajo (inferior izquierda, le damos clic a el ciruclo con las flechas (sincronizar))
+
+
+Para volver a activar el entorno, debemos, perimero nos ubicamos en la carpeta donde esta el entorno virtual cd .\Personal\mision1\proyecto1\ y luego lo activamos env3_13_3\scripts\activate
 ```
 
-### Automarización
+### Python (Entrenamiento)
 ```
+#
+Para comentar
 
+import re
+print("librería cargada correctamente")
+Importaruna libreria, es la libreria (libreria estandar, la cual ya viene dentro del paquete de python), lo que colocamos dentro de las "" es lo que se muestra al ususario. Podemos usar """" para que las comillas internas las tomen como un caracter (el cual aparecera el texto con las comillas)
+
+pip list
+Para conocer la versión de la libreria pip
+python entrenamiento.py  (el cual es el nombre de la pagina python que estamos trabajando)
+Y luego cargamos la libreria en el archivo de python que vamos a utilizar
 ```
