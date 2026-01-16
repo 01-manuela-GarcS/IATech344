@@ -2,7 +2,7 @@
 ## 🤖 Comandos de Consola
 
 ```
-# Es el titulo del README
+# Es el titulo en README, el ## es como un subtitulo, etc. (es como el # es h1, ## h2, etc.)
 ```
 
 ###
@@ -60,6 +60,12 @@ push es el encargado de subir la información al git
 pip list
 Lista de librerias
 
+Para activar una libreria en nuestro entorno virtual
+pip install pytest
+
+python.exe -m pip install --upgrade pip
+Es para actualizar la libreria a la versión más reciente
+
 python -m venv myentorno
 Crea un entorno virtual (ejem: python -m venv env3_13_3 (con el nombre se especifico la vesión de python)) (al crear el entorno se crean las carpetas Include, Lib, Script y los archivos .gitingnore y pyvenv.cfg)
 
@@ -79,6 +85,7 @@ Para "actualizar" la carpeta de Profesores que es la que hemos clonado, lo mejor
 ### Activar entrono virtual
 ```
 Para volver a ACTIVAR el Entorno Virtual, debemos, perimero nos ubicamos en la carpeta donde esta el entorno virtual cd .\Personal\mision1\proyecto1\ y luego lo activamos env3_13_3\scripts\activate
+Podemos poner el comando dir para ver la dirección del entorno virtual y el nombre que le colocamos al entorno
 ```
 ### Desactivar entorno virtual
 ```
@@ -101,7 +108,35 @@ python entrenamiento.py  (el cual es el nombre de la pagina python que estamos t
 Y luego cargamos la libreria en el archivo de python que vamos a utilizar
 ```
 
-###
+### Obtener resultado Python
+```
+Debimos activar el entorno para poder obtener el resultado
+Para obtener el RESULTADO de las operaciones en la terminal escribimos py .\entrenamiento.py  Para el resultado
 ```
 
+### Configuración de Python (Personalización)
+```
+Configuración (parte inferior izquierda), luego Command Palet (Cntrl + shift + p), >configure user snippets (Snippets:Configure Snippets), luego Python
+
+En este entorno podemos crear nuestra propia versión que se adecue a lo que necesitamos
+
+{
+	"Separador de seccion Python":{
+		"prefix": "sep",
+		"body": [
+			"# ====================",
+			"# ${1: PUNTO DE ENTRADA}",
+			"# ===================="
+		],
+		"description": "Crea un separador de secciones en python"
+	}
+}
+
+Esto es una configuración de snippet (fragmento de código) para un editor. Es un snippet personalizado que te permite insertar rápidamente un bloque de comentarios en archivos Python.
+
+sep + Tab
+
+# ====================
+#  PUNTO DE ENTRADA
+# ====================
 ```
