@@ -20,12 +20,21 @@
             <div class="col-md-4 bg-primary text-white p-4"> <!-- la clase se nombra respecto al número de columnas que utilizamos. Siempre son 12 columnas (en bootstrap son por defecto) --> <!-- bg-primary es una clase utilitaria que se usa para aplicar un color de fondo (bootstrap), p-4 es el padding -->
                 <header class="text-center">
                     <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" 
-                    class="imagen rounded-circle" 
-                    alt="Foto_Perfil"> <!-- para cuando la imagen se esta desvordando imagen en la clase y en el css .imagen -->
+                    class="imagen rounded-circle border border-4 mb-3" 
+                    alt="Foto_Perfil"> <!-- para cuando la imagen se esta desvordando imagen en la clase y en el css .imagen, border indica que es un borde y border-4 indica de cuanto es el groser de dicho borde, img-fluid es para que la imagen no se desvolve del contenido (para cuando se reduzca o aumente el tamaño de la pantalla), mb es para el espacio inferior de la pantalla (para que no quede tan pegada al texto, es un margin buttom) -->
                     <h1 class="fw-bold">Manuela García Sánchez</h1> <!-- bold es para poner la letra en negrilla -->
                     <h5>Estudiante de Informatica</h5>
                 </header>
-            </div>
+
+                <section class="my-4">
+                    <h5 class="fw-bold mb-3"> <i class="fas fa-address-card me-2"></i> Contacto</h5>
+                    <ul class="list-unstyled"> <!-- con list-unstyled le quitamos los circulitos -->
+                        <li class="mb-3"> <i class="fa-brands fa-whatsapp me-2"></i> +57 3146251748</li>
+                        <li class="mb-3"> <i class="fas fa-envelope me-2"></i> garcia.manuela0183@gmail.com</li>
+                        <li class="mb-3"> <i class="fab fa-github me-2"></i> https://github.com/01-manuela-GarcS</li>
+                    </ul>
+                </section>
+
             <!-- Columna Derecha -->
             <div class="col-md-8">
             </div>

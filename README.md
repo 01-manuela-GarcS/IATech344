@@ -148,4 +148,11 @@ extrae las librerias con las que he estado trabajando
 
 Importar libreria que no es de python (es sobre python pero no viene en el paquete?)
 pip install openyxl
+
+
+
+Para seleccionar varias lineas para escribi lo mismo, el comando es control + alt + shift + flecha
+	<li class="mt-3">a</li>
+	<li class="mt-3">g</li>
+	<li class="mt-3">h</li>
 ```
