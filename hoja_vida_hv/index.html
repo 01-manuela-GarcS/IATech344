@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HV Manuela García Sánchez</title>
+
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome   https://fontawesome.com/   Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts   https://fonts.google.com/   Fuentes -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container my-5"> <!-- div principal --> <!-- my-5 para bootstrap es es una clase utilitaria que se usa para aplicar un color de fondo (eje x y eje y, en este caso eje y), en las clases de bootstrap va hasta 5 (1 a 5) -->
+        <div class="row shadow-lg rounded-4 overflow-hidden"> <!-- shadow-lg es la sombra de la caja, overflow-hidden es porque si un elemento se desvorda de la caja sea ocultado en esa parte -->
+            <!-- Columna Izquierda -->
+            <div class="col-md-4 bg-primary text-white p-4"> <!-- la clase se nombra respecto al número de columnas que utilizamos. Siempre son 12 columnas (en bootstrap son por defecto) --> <!-- bg-primary es una clase utilitaria que se usa para aplicar un color de fondo (bootstrap), p-4 es el padding -->
+                <header class="text-center">
+                    <img src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" 
+                    class="imagen rounded-circle" 
+                    alt="Foto_Perfil"> <!-- para cuando la imagen se esta desvordando imagen en la clase y en el css .imagen -->
+                    <h1 class="fw-bold">Manuela García Sánchez</h1> <!-- bold es para poner la letra en negrilla -->
+                    <h5>Estudiante de Informatica</h5>
+                </header>
+            </div>
+            <!-- Columna Derecha -->
+            <div class="col-md-8">
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
