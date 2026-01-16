@@ -140,3 +140,12 @@ sep + Tab
 #  PUNTO DE ENTRADA
 # ====================
 ```
+
+```
+comando pip freeze > requirements.txt
+extrae las librerias con las que he estado trabajando
+
+
+Importar libreria que no es de python (es sobre python pero no viene en el paquete?)
+pip install openyxl
+```

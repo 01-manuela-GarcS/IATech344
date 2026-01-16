@@ -1,4 +1,5 @@
 import re
+from openpyxl import load_workbook
 # ====================
 #  FUNCION clean_id
 # Eliminar caracteres no númericos de un documento
@@ -26,3 +27,13 @@ def merge_name(name, lastname):
         lastname =""
     return f"{name} {lastname}".strip()
 
+def process_excel(path): #path es una ruta (ejem: Escritorio\IA_TalentoTech_344), en este caso es la ruta del excel que vamos a trabajar
+    #Acceso a la hoja llamada "datos"
+    ws = wb["Datos"] #Esto representa una hoja
+    for row in range(2,ws.max_row+1);
+        ws[f"D{row}"] =clean_id(ws[f"A{row}"].value)
+        # columna E: nombre completo
+        ws[f"E{row}"]=merge_name(
+        ws[f"B{row}"].value,
+        ws[f"C{row}"].value
+        )
