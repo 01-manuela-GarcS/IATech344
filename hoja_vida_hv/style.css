@@ -10,3 +10,13 @@
 .imagen{
     max-width: 80%; /* resucir el maximo tamaño de la imagen. Es mejor utilizar % ya que se vera en diferentes resoluciones de pantalla */
 }
+
+/* Opacidad barra progreso */
+.progress{
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Cambio color texto columna derecha */
+.text-primary{
+    color: #3498db !important;
+}

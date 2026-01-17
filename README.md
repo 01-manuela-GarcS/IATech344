@@ -167,3 +167,26 @@ Para seleccionar varias lineas para escribi lo mismo, el comando es control + al
 Para abrir la pagina de python creada en proccessor.py ui.py app.py, con el comando py app.py
 antes de eso instale pip install openpyxl
 ```
+
+###
+```
+Clonar un prioyecto si lo bvoy a abrir en otra naquina
+
+pip list
+librerias
+
+pip install pyinstaller
+libreria que se encarga de construir ejecutables en python (instalarla)
+Un ejecutable en Python es un archivo (como un .exe en Windows) que contiene tu código Python y todas sus dependencias, empaquetado para que se pueda ejecutar directamente en una computadora sin necesidad de tener Python instalado, permitiendo compartir y usar la aplicación fácilmente con un doble clic o desde la terminal.
+
+Crear un .exe
+1. Instalar librerias
+	pip install pyinstaller
+2. Crear el .exe
+	pyinstaller --onefile --windowed app.py
+
+
+
+
+
+```
