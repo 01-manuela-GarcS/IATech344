@@ -5,8 +5,12 @@
 # Es el titulo en README, el ## es como un subtitulo, etc. (es como el # es h1, ## h2, etc.)
 ```
 
-###
+### Imagen insertada en el código Python
+```
 ![alt text](image.png)
+El código indica que es una imagen [Descriçión de la imagen en caso de que no carge] y (enlace o ubicación de la imagen)
+```
+
 ```
 python --version ó py --version
 ```
@@ -155,4 +159,11 @@ Para seleccionar varias lineas para escribi lo mismo, el comando es control + al
 	<li class="mt-3">a</li>
 	<li class="mt-3">g</li>
 	<li class="mt-3">h</li>
+
+
+
+
+
+Para abrir la pagina de python creada en proccessor.py ui.py app.py, con el comando py app.py
+antes de eso instale pip install openpyxl
 ```

@@ -27,13 +27,37 @@ def merge_name(name, lastname):
         lastname =""
     return f"{name} {lastname}".strip()
 
+
+
 def process_excel(path): #path es una ruta (ejem: Escritorio\IA_TalentoTech_344), en este caso es la ruta del excel que vamos a trabajar
     #Acceso a la hoja llamada "datos"
+    wb= load_workbook(path)
     ws = wb["Datos"] #Esto representa una hoja
-    for row in range(2,ws.max_row+1);
+    #con +1 indicamos que no deseamos seleccionar la primera fila, es decir, que no tome los datos de la primera fila
+    for row in range(2,ws.max_row+1):
         ws[f"D{row}"] =clean_id(ws[f"A{row}"].value)
         # columna E: nombre completo
         ws[f"E{row}"]=merge_name(
         ws[f"B{row}"].value,
         ws[f"C{row}"].value
         )
+    # Guardar los cambios en el mismo archivo (path)
+    wb.save(path)
+
+def proccess_excel_safe(path):
+    #Es lo que se va a ejecutar correctamente
+    try:
+        process_excel(path)
+        return True, "Archivo procesado correctamente."
+    except PermissionError:
+        return(
+            False,
+            "El archivo Excel está abierto.\n"
+            # La \n indica el texto seguira en la siguiente linea. Este error sale si el archivo que se busca "ejecutar" esta abierto
+            "Por favor, ciérrelo o intente nuevamente."
+        )
+    except KeyError:
+        return False, "Hoja 'Datos' no encontrada"
+    except Exception as e:
+        #Las que se pueden generar y que no conocemos. La identificamos con e
+        return False, f"Error inesperado: {str(e)}"
