@@ -185,9 +185,7 @@ Crear un .exe
 2. Crear el .exe
 	pyinstaller --onefile --windowed app.py
 
-
-
-
+S
 
 ```
 
@@ -195,8 +193,8 @@ Crear un .exe
 
 
 ```
-
-
-
+1. Poder seleccionar cualquier archivo, por medio del lenguaje natural dar una instrucción
+2. interfaz que nos deje seleccionar un archvio y que ejecute la instrucción
+3. Unir el archvio mision1 y mision2, es decir, seleccionar el archvio y escribirle una instrucción (unir las funciones)(seleccionar archivo, escribimos y dar a ejecutar)
 
 ```
