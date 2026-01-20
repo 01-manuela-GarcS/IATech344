@@ -5,8 +5,10 @@ from openpyxl import load_workbook
 
 
 def ejecutar_accion(instruccion, archivo_excel):
+    # Puede ser    archivo_excel   o   path
     # Abre el archivo de ejemplo
     wb = load_workbook(archivo_excel)
+    # podemos seleccionar el archvio que queremos reemplazar, con contrl h, podemos ver todas las concidencias con ese miemso nombre cambiarlas todas sin tener que ir una por una
     ws = wb.active
 
     if instruccion["action"] == "clean_id":
@@ -20,5 +22,5 @@ def ejecutar_accion(instruccion, archivo_excel):
             apellido = ws["B" + str(fila)].value or ""
             ws["C" + str(fila)] = f"{nombre} {apellido}".strip()
 
-    wb.save("ejemplo.xlsx")
+    wb.save(archivo_excel)
  
