@@ -88,6 +88,9 @@ Para "actualizar" la carpeta de Profesores que es la que hemos clonado, lo mejor
 
 ### Activar entrono virtual
 ```
+python -m venv venv3.13.3
+PARA CREAR UN ENTORNO VIRTUAL
+
 Para volver a ACTIVAR el Entorno Virtual, debemos, perimero nos ubicamos en la carpeta donde esta el entorno virtual cd .\Personal\mision1\proyecto1\ y luego lo activamos env3_13_3\scripts\activate
 Podemos poner el comando dir para ver la dirección del entorno virtual y el nombre que le colocamos al entorno
 ```
@@ -202,5 +205,25 @@ S
 github pages
 
 
+
+```
+
+
+```
+Extensión Jupyter
+
+Carpeta en Mision2. Epandas (e de ejemplo, y pandas es una libreria). y un archivo (file) con la extención de jupiter libropandas.ipynb
+intalamos la libreria pandas, pip install pandas (con el entorno virtual activo)
+
+df es un estandar, hace referencia csv (el tipo de arxhivo que estamos trabajando), la forma de llmarlo es con ./y el nombre del archivo
+
+```
+
+```
+PS C:\Users\Usuario\OneDrive\Escritorio\IA_TalentoTech_344\Personal\Mision3> venv3.13.3\scripts\activate
+python -m venv venv3.13.3
+venv3.13.3\scripts\activate
+python.exe -m pip install --upgrade pip
+pip install -r requirements.txt
 
 ```
