@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container my-5"> <!-- div principal --> <!-- my-5 para bootstrap es es una clase utilitaria que se usa para aplicar un color de fondo (eje x y eje y, en este caso eje y), en las clases de bootstrap va hasta 5 (1 a 5) -->
+    <main id="pdf-content">
+        <div class="container my-5"> <!-- div principal --> <!-- my-5 para bootstrap es es una clase utilitaria que se usa para aplicar un color de fondo (eje x y eje y, en este caso eje y), en las clases de bootstrap va hasta 5 (1 a 5) -->
         <div class="row shadow-lg rounded-4 overflow-hidden"> <!-- shadow-lg es la sombra de la caja, overflow-hidden es porque si un elemento se desvorda de la caja sea ocultado en esa parte -->
 
             <!-- COLUMNA IZQUIERDA -->
@@ -87,6 +88,7 @@
 
             <!-- COLUMNA DERECHA -->
             <div class="col-md-8 p-4">
+                <!-- Experiencia -->
                 <section class="mb-3">
                     <h4 class="fw-bold text-primary mb-4">
                         <i class="fas fa-briefcase me-1"></i>
@@ -129,9 +131,63 @@
                         </div>
                     </div>
                 </section>
+
+                <!-- Educación -->
+                <section class="my-3">
+                    <h4 class="fw-bold text-primary">
+                        <i class="fas fa-graduation-cap me-2"></i>
+                        Educación
+                    </h4>
+                    <div class="card mb-3 border-0 shadow-lg">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">
+                                Aspirante a tecnología en Análisis y Desarrollo de Software
+                            </h4>
+                            <h5 class="card-subtitle mb-2 text-muted small">
+                                0000 - Actualidad
+                            </h5>
+                            <h6 class="text-primary">
+                                SENA (Servicio Nacional de Aprendizaje)
+                            </h6>
+                            <ul class="mt-3">
+                                <li>Desempeño 1</li>
+                                <li>Desempeño 2</li>
+                                <li>Desempeño 3</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card mb-3 border-0 shadow-lg">
+                        <div class="card-body">
+                            <h4 class="card-title fw-bold">
+                                Aspirante a Bootcamp en Inteligencia Artificial
+                            </h4>
+                            <h5 class="card-subtitle mb-2 text-muted small">
+                                0000 - Actualidad
+                            </h5>
+                            <h6 class="text-primary">
+                                Talento Tech
+                            </h6>
+                            <ul class="mt-3">
+                                <li>Desempeño 1</li>
+                                <li>Desempeño 2</li>
+                                <li>Desempeño 3</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+
             </div>
 
         </div>
+        </div>
+    </main>
+
+    <div class="text-center mb-4">
+        <button onclick="downloadPDF()" class="btn btn-outline-primary">Descargar en PDF</button>
     </div>
+
+    <script src="https://unpkg.com/html2pdf.js@0.10.1/dist/html2pdf.bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
