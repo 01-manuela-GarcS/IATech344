@@ -254,6 +254,11 @@ En telegram BotFather y crear el bot
 
 cuando una libreria aparece como error, en la parte inferior derecha seleccionamos el entorno virtual, luego al darle clic la parte de arriba se abre y seleccionamos	Enter interpreter path...	y	Find	vamos a la carpeta donde estamos trabajando con el entorno virtual (es decir, cuando no nos permite las librerias es porque esta seleccionado otro entorno y no en el que deseamos trabajar y donde tenemos intaladas las "herramientas"). En este caso la carpeta	\Personal\Bot_OpenIA\env\Scripts\Python	(se selecciona Python), luego volvemos a dar clic en el entorno virtual (parte inferior) y seleccionamos el entorno vitual en la "dirección" donde esta en entorno virtual que requerimos
 
+Pythonanywhere
+en Files subir los archivos bot_grog.py y requirements.txt
+en Console > bash > instalar los requirements.txt	pip install -r requirements.txt
+borrar esa consola y vovler a ir a Files y abrir bot_grog.py y darle correr (Run)
+
 
 
 >>>>>>> 8ddf2ea (actualizacion)
