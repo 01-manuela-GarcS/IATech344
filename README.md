@@ -226,4 +226,19 @@ venv3.13.3\scripts\activate
 python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
 
+
+
+
+
+
+
+version3 > pip install flask
+
+
+Google > Pythonanywhere
+
+
+
+
+>>>>>>> c911084 (actualización)
 ```
