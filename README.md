@@ -231,7 +231,6 @@ pip install -r requirements.txt
 
 
 
-
 version3 > pip install flask
 
 
@@ -240,5 +239,22 @@ Google > Pythonanywhere
 
 
 
+<<<<<<< HEAD
 >>>>>>> c911084 (actualización)
+=======
+26/01/2026
+
+cd .\Personal\Bot_OpenIA\
+py -m venv env
+.\env\Scripts\activate
+pip install -r requirements.txt    Para instalar los requerimientos de mi libreria (con el entorno activo)
+
+Craer cuenta en telegram y n8n
+En telegram BotFather y crear el bot
+
+cuando una libreria aparece como error, en la parte inferior derecha seleccionamos el entorno virtual, luego al darle clic la parte de arriba se abre y seleccionamos	Enter interpreter path...	y	Find	vamos a la carpeta donde estamos trabajando con el entorno virtual (es decir, cuando no nos permite las librerias es porque esta seleccionado otro entorno y no en el que deseamos trabajar y donde tenemos intaladas las "herramientas"). En este caso la carpeta	\Personal\Bot_OpenIA\env\Scripts\Python	(se selecciona Python), luego volvemos a dar clic en el entorno virtual (parte inferior) y seleccionamos el entorno vitual en la "dirección" donde esta en entorno virtual que requerimos
+
+
+
+>>>>>>> 8ddf2ea (actualizacion)
 ```
