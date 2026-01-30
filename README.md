@@ -261,5 +261,66 @@ borrar esa consola y vovler a ir a Files y abrir bot_grog.py y darle correr (Run
 
 
 
+<<<<<<< HEAD
 >>>>>>> 8ddf2ea (actualizacion)
 ```
+=======
+```
+
+
+
+```
+JUEVES 29/01/2026
+
+
+Subir el proyecto
+python anywhere > files > Diectorio nueve (chatbot344)
+chatbot344 > file (main.py)(requirements.txt) > la consola se abre
+requirements.txt > se ponen las librerias (Flask, groq, python-dotenv) > save(guardar)
+	Flask
+	groq
+	python-dotenv
+
+chatbot344 > directorio (chatbot)	(modelado)
+chatbot344 > directorio (static)	(donde van las imagenes)
+chatbot344 > directorio (templates) 	(va el html)
+
+chatbot > files (model.py) > código
+	import os
+	from groq import Groq
+	from dotenv import load_doten	 (se encargara de las variables de entorno)
+
+	load_dotenv()
+
+	def generate_response(user_text,system_promt=None):
+		api_key = os.getenv("GROQ_API_KEY")
+		if not api_key:
+			return "❌ Error de configuración de la api"
+		client = Groq(api_key=api_key)
+		messages =[]
+		if system_promt:
+			messages.append({
+				"role": "system",
+				"content": system_promt
+			})
+	messages.append({
+		"role":"user",
+		"role":user_text
+	})
+
+	response = client.chat.completions.create(
+		model="llama-3.3-70b-versatile",
+		messages=messages,
+		templates=0.3
+	)
+	return response.choice[0].message.cohtent
+
+
+En Mision3 > nueva carpeta (chatbotpw)
+
+
+
+
+
+```
+>>>>>>> e557b78 (Agrega chatbotpw y actualiza README)
